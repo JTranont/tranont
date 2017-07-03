@@ -279,6 +279,9 @@
         left: 20px;
         width: 260px;
       }
+      #no-left-margin {
+        margin-left: 0;
+      }
       #registerBtn {
         position: absolute;
         z-index: 1;
@@ -359,26 +362,33 @@
       }
       .diningBtn {
         background-color: #ffffff;
-        margin-top: 37px;
+        margin-top: 94px;
         border: 2px solid #777777;
         border-radius: 0;
         letter-spacing: 1px;
       }
       .hotelBtn {
         background-color: #ffffff;
-        margin-top: -10px;
+        margin-top: -5px;
+        border: 2px solid #777777;
+        border-radius: 0;
+        letter-spacing: 1px;
+      }
+      .sessionBtn {
+        background-color: #ffffff;
+        margin-top: 28px;
         border: 2px solid #777777;
         border-radius: 0;
         letter-spacing: 1px;
       }
       .travelBtn {
         background-color: #ffffff;
-        margin-top: 5px;
+        margin-top: 21px;
         border: 2px solid #777777;
         border-radius: 0;
         letter-spacing: 1px;
       }
-      .diningBtn:hover, .travelBtn:hover, .hotelBtn:hover {
+      .diningBtn:hover, .travelBtn:hover, .hotelBtn:hover, .sessionBtn:hover {
         background-color: #dddddd;
         border-color: #777777;
       }
@@ -468,6 +478,17 @@
         background-color: #555;
         color: #ffffff;
       }
+      .late-registration {
+        position: absolute;
+        z-index: 1;
+        top: 490px;
+        left: 52.25%;
+        width: 25%;
+        color: #02538a;
+        letter-spacing: 2px;
+        font-weight: 800;
+        font-size: 16px;
+      }
       .main {
         width: 100%;
       }
@@ -507,15 +528,35 @@
           background-color: rgb(0,0,0); /* Fallback color */
           background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
       }
+      .modal3 {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          padding-top: 100px; /* Location of the box */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
 
       /* Modal Content */
-      #restaurantModal {
-        position: relative;
-        z-index: 1;
+      #modal-sub-header {
+        margin-top: 32px;
       }
-      #travelModal {
-        position: fixed;
-        z-index: 1;
+      #restaurantsModal .modal-content {
+        height: 386%;
+      }
+      #scheduleModal .modal-content {
+        height: 175%;
+      }
+      #scheduleModal .close3 {
+        color: #cccccc;
+      }
+      #scheduleModal .close3:hover {
+        color: #777777;
       }
       #travelModal h3, #travelModal h4 {
         font-weight: 800;
@@ -526,7 +567,13 @@
         text-decoration: underline;
       }
       #travelModal .modal-content {
-        height: 75%;
+        height: 98%;
+      }
+      #travelModal .close2 {
+        color: #cccccc;
+      }
+      #travelModal .close2:hover {
+        color: #777777;
       }
       .column2 {
           margin-top: -17px;
@@ -537,7 +584,6 @@
           padding: 20px;
           border: 1px solid #888;
           width: 60%;
-          height: 292%;
       }
 
       /* The Close Button */
@@ -569,6 +615,20 @@
           text-decoration: none;
           cursor: pointer;
       }
+      .close3 {
+          color: #555555;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          margin-top: -10px;
+      }
+
+      .close3:hover,
+      .close3:focus {
+          color: #000;
+          text-decoration: none;
+          cursor: pointer;
+      }
 
       @media only screen and (max-width: 1200px) {
         #address {
@@ -587,12 +647,6 @@
         #registerBtn {
           top: 470px;
           left: 589px;
-        }
-        #travelModal .modal-content {
-          height: 77%;
-        }
-        .modal-content {
-          height: 306%;
         }
       }
 
@@ -635,8 +689,14 @@
           top: 465px;
           left: 386px;
         }
+        #restaurantsModal .modal-content {
+          height: 400%;
+        }
+        #scheduleModal .modal-content {
+          height: 199%;
+        }
         #travelModal .modal-content {
-          height: 91%;
+          height: 101%;
         }
         .bottom-row {
           top: 955px;
@@ -652,9 +712,6 @@
         }
         .main img {
           width: 140%;
-        }
-        .modal-content {
-          height: 350%;
         }
         .socialmedia-icons {
           height: 80px !important;
@@ -688,10 +745,16 @@
         #travelBtn {
           padding: 3px 7px;
         }
-        #travelModal .modal-content {
-          height: 93%;
+        #restaurantsModal .modal-content {
+          height: 461%;
         }
-        .diningBtn, .hotelBtn {
+        #scheduleModal .modal-content {
+          height: 225%;
+        }
+        #travelModal .modal-content {
+          height: 112%;
+        }
+        .diningBtn, .hotelBtn, .sessionBtn {
           padding: 3px 7px;
         }
         .foreground h3 {
@@ -712,8 +775,17 @@
         .main img {
           width: 160%;
         }
-        .modal-content {
-          height: 432%;
+        .diningBtn {
+          margin-top: 65px;
+        }
+        .hotelBtn {
+          margin-top: 6px;
+        }
+        .sessionBtn {
+          margin-top: 27px;
+        }
+        .travelBtn {
+          margin-top: 16px;
         }
       }
 
@@ -755,8 +827,14 @@
           left: 241px;
           width: 32%;
         }
+        #restaurantsModal .modal-content {
+          height: 554%;
+        }
+        #scheduleModal .modal-content {
+          height: 267%;
+        }
         #travelModal .modal-content {
-          height: 108%;
+          height: 119%;
         }
         .bottom-row a {
           letter-spacing: 1px;
@@ -776,7 +854,7 @@
         .countdown span {
           font-size: 32px;
         }
-        .diningBtn, .travelBtn, .hotelBtn {
+        .diningBtn, .travelBtn, .hotelBtn, .sessionBtn {
           padding: 3px 5px;
           font-size: 10px;
         }
@@ -790,8 +868,19 @@
           width: 215%;
         }
         .modal-content {
-          height: 533%;
           margin: 0 auto 150px auto;
+        }
+        .diningBtn {
+          margin-top: 65px;
+        }
+        .hotelBtn {
+          margin-top: 11px;
+        }
+        .sessionBtn {
+          margin-top: 38px;
+        }
+        .travelBtn {
+          margin-top: 19px;
         }
       }
 
@@ -831,8 +920,14 @@
           left: 167px;
           padding: 5px 10px;
         }
+        #restaurantsModal .modal-content {
+          height: 384%;
+        }
+        #scheduleModal .modal-content {
+          height: 200%;
+        }
         #travelModal .modal-content {
-          height: 98%;
+          height: 92%;
         }
         .bottom-row a {
           margin-top: 15px;
@@ -857,12 +952,23 @@
           width: 270%;
         }
         .modal-content {
-          height: 472%;
           font-size: 12px;
-          padding: 0 5px;
+          padding: 11px 5px;
+          width: 85%;
+        }
+        .diningBtn {
+          margin-top: 105px;
+        }
+        .hotelBtn {
+          margin-top: 23px;
+        }
+        .sessionBtn {
+          margin-top: 37px;
+        }
+        .travelBtn {
+          margin-top: 32px;
         }
       }
-
       @media only screen and (max-width: 400px) {
         #address {
           top: 255px;
@@ -889,13 +995,19 @@
           top: 390px;
           left: 140px;
         }
+        #restaurantsModal .modal-content {
+          height: 497%;
+        }
+        #scheduleModal .modal-content {
+          height: 201%;
+        }
         #travelModal .modal-content {
-          height: 94%;
+          height: 106%;
         }
         .btn-info {
           font-size: 10px;
         }
-        .diningBtn, .travelBtn, .hotelBtn {
+        .diningBtn, .travelBtn, .hotelBtn, .sessionBtn {
           font-size: 8px;
         }
         .countdown p {
@@ -910,8 +1022,17 @@
         .main img {
           width: 270%;
         }
-        .modal-content {
-          height: 472%;
+        .diningBtn {
+          margin-top: 96px;
+        }
+        .hotelBtn {
+          margin-top: 33px;
+        }
+        .sessionBtn {
+          margin-top: 40px;
+        }
+        .travelBtn {
+          margin-top: 32px;
         }
       }
       @media only screen and (max-width: 375px) {
@@ -1130,6 +1251,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="http://tranontinternational.ca"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Canadian Flag"/> CA (EN)</a></li>
                   <li><a href="http://fr.tranontinternational.ca"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Canadian Flag"/> CA (FR)</a></li>
+                  <li><a href="http://es.tranont.com"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201706_espanol_tag.png" alt="Español"/> Español</a></li>
                 </ul>
               </li>
     		      <li>
@@ -1166,7 +1288,7 @@
             <img id="header" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEvent_header_01.png" alt="Featuring Keynote Speaker Chad Hymas - www.chadhymas.com"/>
             <img id="address" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/JuneEvent_saltpalace_address_01.png" alt="Salt Palace Convention Center 100 S W Temple, Salt Lake City, UT 84101"/>
             <img id="background" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201704_EventPage_01.jpg" alt="Salt Palace Convention Center"/>
-            <a id="registerBtn" href="https://member.tranont.com/sc/basepages/sc_home.asp?cat=home" class="btn btn-info">Register Now</a>
+            <h4 class="late-registration">Registration Now Only at<br/>the Door ($129 USD/$169 CAD)</h4>
           </div>
           <div class="col-xs-12 foreground">
             <div class="col-xs-3">
@@ -1176,10 +1298,70 @@
               <h3 class="center">Schedule</h3>
               <hr/>
               <div class="schedule center foreground-text">
-                <h4><strong>Morning Convention</strong><br/>9 a.m. - 12 p.m.</h4>
+                <h4><strong>Morning Session</strong><br/>9 a.m. - 12 p.m.</h4>
                 <h4><strong>Lunch</strong><br/>12 p.m. - 2 p.m.</h4>
-                <h4><strong>Afternoon Convention</strong><br/>2 p.m. - 6 p.m.</h4>
-                <h6>(Daily)</h6>
+                <h4><strong>Afternoon Session</strong><br/>2 p.m. - 6 p.m.</h4>
+              </div>
+              <div class="center foreground-text">
+                  <button id="scheduleBtn" class="btn btn-default sessionBtn" href="#" target="_blank">Schedule</button>
+              </div>
+            </div>
+            <div id="scheduleModal" class="modal3">
+              <div class="modal-content">
+                <span class="close3">&times;</span>
+                <div class="col-xs-12">
+                  <h3>Daily Convention Schedule</h3>
+                  <h4 id="no-left-margin"><strong>June 22<sup>nd</sup></strong></h4>
+                  <p>
+                    TranontLife Boot Camp<br/>
+                    For non-licensed, beginning and advanced agents.<br/>
+                    9 a.m. - 6 p.m. MST
+                  </p>
+                  <h4 id="no-left-margin"><strong>June 23<sup>rd</sup> and 24<sup>th</sup></strong></h4>
+                  <p>
+                    International Convention<br/>
+                    9 a.m. - 6 p.m. MST
+                  </p>
+                  <h3 id="modal-sub-header">Detailed Daily Schedule</h3>
+                  <h4 id="no-left-margin"><strong>Remember to use #TranontInt2017 and share how Tranont changes lives.</strong></h4>
+                  <h4 id="no-left-margin"><strong>Wednesday, June 21<sup>st</sup></strong></h4>
+                  <p>
+                    8:30 AM - 1:00 PM - Charity Golf Tournament<br/>
+                    @ Fox Hollow Golf Course, American Fork
+                  </p>
+                  <h4 id="no-left-margin"><strong>Thursday, June 22<sup>nd</sup></strong></h4>
+                  <p><em>All events at the Salt Palace Convention Center</em></p>
+                  <p>
+                    Tranont Life Bootcamps (Rooms 355 A & B)<br/>
+                    9:00 AM - 12:00 PM - Tranont Non-licensed & Basic Boot Camps<br/>
+                    1:00 PM - 5:00 PM - Advanced & Canadian Boot Camps<br/>
+                    6:00 PM - 9:00 PM - Pre-Registration & Mingle (Outside of Hall 4)<br/>
+                    Come mingle with Executive Team and top leaders! All Associates are invited.
+                  </p>
+                  <h4 id="no-left-margin"><strong>Friday, June 23<sup>rd</sup></strong></h4>
+                  <p><em>All events at the Salt Palace Convention Center</em></p>
+                  <p>
+                    7:30 AM - 9:00 AM - Registration
+                  </p>
+                  <p>
+                    9:00 AM - 6:00 PM - General Session<sup>*</sup><br/>
+                    <em><sup>*</sup>Anticipated 90-minute lunch break starting at noon.</em>
+                  </p>
+                  <p>
+                    7:30 AM - 9:00 PM - Associate Store<sup>**</sup><br/>
+                    <em><sup>**</sup>Associate Store open only when not in General Session.</em>
+                  </p>
+                  <h4 id="no-left-margin"><strong>Saturday, June 24<sup>th</sup></strong></h4>
+                  <p><em>All events at the Salt Palace Convention Center</em></p>
+                  <p>
+                    9:00 AM - 6:00 PM - General Session<sup>*</sup><br/>
+                    <em><sup>*</sup>Anticipated 90-minute lunch break starting at noon.</em>
+                  </p>
+                  <p>
+                    7:30 AM - 9:00 PM - Associate Store<sup>**</sup><br/>
+                    <em><sup>**</sup>Associate Store open only when not in General Session.</em>
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-xs-3">
@@ -1192,6 +1374,8 @@
                   <h4>Salt Lake City<br/>Marriott City Center</h4>
                   <h5>220 South State Street<br/>Salt Lake City, UT 84111</h5>
                   <h5><strong>$179/night</strong></h5>
+              </div>
+              <div class="center foreground-text">
                   <h5><a href="http://www.marriott.com/meeting-event-hotels/group-corporate-travel/groupCorp.mi?resLinkData=Tranont%5Eslccc%60tratraa%60179.00%60USD%60false%605%606/22/17%606/23/17%605/25/17&app=resvlink&stop_mobi=yes" class="btn btn-default hotelBtn" target="_blank">Book Now</a></h5>
               </div>
             </div>
@@ -1202,8 +1386,10 @@
               <h3 class="center">Dining</h3>
               <hr/>
               <div class="center foreground-text">
-                  <h4>Find local restaurants in Downtown Salt Lake City.</h4>
-                  <button id="restaurantsBtn" class="btn btn-default diningBtn" href="#" target="_blank">Find Eateries</button>
+                <h4>Find local restaurants in Downtown Salt Lake City.</h4>
+              </div>
+              <div class="center foreground-text">
+                <button id="restaurantsBtn" class="btn btn-default diningBtn" href="#" target="_blank">Find Eateries</button>
               </div>
               <div id="restaurantsModal" class="modal">
                 <div class="modal-content">
@@ -1507,6 +1693,8 @@
                   <h4>Salt Lake City<br/>International Airport</h4>
                   <h5>Salt Lake City<br/>776 N Terminal Dr<br/>
                       Salt Lake City, UT 84122</h5>
+              </div>
+              <div class="center foreground-text">
                   <button id="travelBtn" class="btn btn-default travelBtn" href="#" target="_blank">Find <br class="dissappearing-br"/>Transportation</button>
               </div>
             </div>
@@ -1555,9 +1743,6 @@
               <li>
                 <span class="seconds"></span>
                 <p class="timeRefSeconds"></p>
-              </li>
-              <li>
-                <a href="https://member.tranont.com/sc/basepages/sc_home.asp?cat=home" class="btn btn-info">Register Now</a>
               </li>
         	</ul>
           </div>
@@ -1688,7 +1873,7 @@
 
       //Call countdown plugin
       $(".countdown").countdown({
-        date: "23 june 2017 9:00:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
+        date: "23 june 2020 9:00:00", // add the countdown's end date (i.e. 3 november 2012 12:00:00)
         format: "on" // on (03:07:52) | off (3:7:52) - two_digits set to ON maintains layout consistency
       },
 
@@ -1705,14 +1890,17 @@
       // Get the modal
       var modal = document.getElementById('restaurantsModal');
       var modal2 = document.getElementById('travelModal');
+      var modal3 = document.getElementById('scheduleModal');
 
       // Get the button that opens the modal
       var btn = document.getElementById('restaurantsBtn');
       var btn2 = document.getElementById('travelBtn');
+      var btn3 = document.getElementById('scheduleBtn');
 
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
       var span2 = document.getElementsByClassName("close2")[0];
+      var span3 = document.getElementsByClassName("close3")[0];
 
       // When the user clicks the button, open the modal
       btn.onclick = function() {
@@ -1720,6 +1908,9 @@
       }
       btn2.onclick = function() {
           modal2.style.display = "block";
+      }
+      btn3.onclick = function() {
+          modal3.style.display = "block";
       }
 
       // When the user clicks on <span> (x), close the modal
@@ -1729,6 +1920,9 @@
       span2.onclick = function() {
           modal2.style.display = "none";
       }
+      span3.onclick = function() {
+          modal3.style.display = "none";
+      }
 
       // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
@@ -1737,6 +1931,9 @@
           }
           if (event.target == modal2) {
               modal2.style.display = "none";
+          }
+          if (event.target == modal3) {
+              modal3.style.display = "none";
           }
       }
       </script>

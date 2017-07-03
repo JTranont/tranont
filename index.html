@@ -209,7 +209,6 @@
       }
     }
     /**** END Navbar Stylings ****/
-
       /**** BEGIN Main Page Stylings ****/
       a {
         cursor: pointer;
@@ -219,9 +218,6 @@
       }
       a:focus {
         text-decoration: none;
-      }
-      .below-top-row {
-        position: relative;
       }
       .bottom-mods {
         background-color: #05538a;
@@ -527,16 +523,13 @@
         display: block;
         margin-top: 50px;
       }
-      .top-row img {
-        width: 100%;
-      }
       .top-row-video {
         display: none;
         margin-top: 50px;
       }
       .top-section-text {
         position: absolute;
-        top: 59px;
+        top: 110px;
         left: 0;
         text-align: center;
       }
@@ -580,6 +573,7 @@
         margin: 0 auto;
       }
       #buttonEventMovie {
+        border-radius: 0;
         border: none;
         color: #ffffff;
         padding: 1px 15px;
@@ -588,7 +582,7 @@
         letter-spacing: 1px;
         position: relative;
         top: -170px;
-        left: 5px;
+        left: 7px;
         background-color: rgba(5,83,138,0.5);
       }
       #buttonEventMovie:hover {
@@ -665,7 +659,7 @@
           font-size: 16px;
         }
         .top-section-text {
-          top: 17px;
+          top: 70px;
         }
         #buttonEventMovie {
           top: -108px;
@@ -736,6 +730,9 @@
           padding: 10px 15px 0 20px;
           line-height: 17px;
           letter-spacing: 3px;
+        }
+        .top-section-text {
+          top: 70px;
         }
         #video-button {
           font-size: 30px;
@@ -848,7 +845,7 @@
           margin: 30px 0 30px 0;
         }
         .top-section-text {
-          top: 25px;
+          top: 75px;
         }
         .top-section-text h2 {
           line-height: 30px;
@@ -935,7 +932,7 @@
           line-height: 15px;
         }
         .top-section-text {
-          top: 10px;
+          top: 65px;
         }
         #buttonEventMovie {
           top: -59px;
@@ -1030,7 +1027,7 @@
           font-size: 12px;
         }
         .top-section-text {
-          top: 35px;
+          top: 70px;
         }
         .top-section-text h2 {
           font-size: 16px;
@@ -1122,7 +1119,7 @@
           margin-top: 10px;
         }
         .top-section-text {
-          top: 29px;
+          top: 70px;
         }
         .top-section-text h2 {
           display: none;
@@ -1197,7 +1194,7 @@
           margin-top: 5px;
         }
         .top-section-text {
-          top: 16px;
+          top: 65px;
         }
         .top-section-text img {
           width: 150px;
@@ -1248,7 +1245,7 @@
           font-size: 8px;
         }
         .top-section-text {
-          top: 12px;
+          top: 65px;
         }
         #buttonEventMovie {
           top: -154px;
@@ -1299,7 +1296,7 @@
           letter-spacing: 3px;
         }
         .top-section-text {
-          top: 17px;
+          top: 65px;
         }
         .top-section-text h2 {
           font-size: 15px;
@@ -1380,7 +1377,7 @@
           letter-spacing: 2px;
         }
         .top-section-text {
-          top: 17px;
+          top: 65px;
         }
         .top-section-text h2 {
           font-size: 15px;
@@ -1406,7 +1403,7 @@
           top: -1px;
         }
         .top-section-text {
-          top: 17px;
+          top: 65px;
         }
         .top-section-text img {
           width: 120px;
@@ -1421,7 +1418,6 @@
         }
       }
       /**** END Main Page Stylings ****/
-
       /**** BEGIN Footer Stylings ****/
       ul li a i {
         background: #888888;
@@ -1584,6 +1580,7 @@
                 <ul class="dropdown-menu">
                   <li><a href="http://tranontinternational.ca"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Canadian Flag"/> CA (EN)</a></li>
                   <li><a href="http://fr.tranontinternational.ca"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/canadian-flag-small.png" alt="Canadian Flag"/> CA (FR)</a></li>
+                  <li><a href="http://es.tranont.com"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201706_espanol_tag.png" alt="Español"/> Español</a></li>
                 </ul>
               </li>
     		      <li>
@@ -1611,11 +1608,6 @@
       <!-- BEGIN Main Content -->
       <div class="container main">
         <div class="row top-row">
-          <div class="col-xs-12">
-            <a href="http://tranont.com/june-event.html" target="_blank"><img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/201704_EventPageBanner_01.jpg" alt="June International Event - June 22 (9AM - 6PM) - June 24 (9AM - 6PM) - Salt Palace Convention Center, Salt Lake City, UT - $99 USD OR $129 CAD - Late registration price increase after June 18th to $129 USD/$169 CAD - Featuring Keynote Speaker Chad Hymas, www.chadhymas.com - LEARN MORE"/></a>
-          </div>
-        </div>
-        <div class="row below-top-row">
           <div class="col-xs-12 top-section-text">
             <img src="https://s3-us-west-2.amazonaws.com/cont.training/Images/Tranont_Logo-vertical_white.png" alt="Tranont Logo, (Vertical & White)"/>
             <h2>Change the World's Economy<br/>One Household At A Time</h2><br/>
@@ -1623,7 +1615,7 @@
           </div>
           <div class="col-xs-12 top-section-video">
             <video id="video" class="top-video" autoplay loop>
-              <source src="https://s3-us-west-2.amazonaws.com/cont.training/Videos/201611_HomePage_videobanner.mp4" type="video/mp4" alt="Section of the Tranont Overview Video">
+              <source src="https://s3-us-west-2.amazonaws.com/cont.training/Videos/20170606_VideoBanner.mp4" type="video/mp4" alt="Section of the Tranont Overview Video">
               Your browser does not support playing this video.
             </video>
           </div>
@@ -1732,16 +1724,16 @@
             <div class="col-xs-6 event-6">
               <div class="event-text">
                 <hr class="event-hr-top">
-                <h2>June Event</h2>
-                <h6>Salt Palace Convention Center</h6>
-                <h6>June 23-24, 2017</h6>
-                <a href="http://tranont.com/events.html#international" class="btn btn-default btn-page">Learn More</a>
+                <h2>October 2017 Event</h2>
+                <h6>More Information</h6>
+                <h6>Coming Soon</h6>
+                <!--<a href="http://tranont.com/events.html#international" class="btn btn-default btn-page">Learn More</a>-->
                 <hr class="event-hr-bottom">
               </div>
             </div>
             <div class="col-xs-6 event-6">
-              <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/June2017EventHighlightVideo.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
-              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT<br/>HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
+              <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2017_JuneIntnlEvent.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
+              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=yhI5B59OfXk" target="_blank" type="button" class="btn btn-default"><h5>JUN 2017 EVENT<br/>HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
               <!-- <div class="col-xs-12" id="movieEventWrapper">
               </div> -->
             </div>
@@ -1749,14 +1741,14 @@
           <div class="col-xs-12 event-12">
             <div class="event-text">
               <hr class="event-hr-top">
-              <h2>June Event</h2>
-              <h6>Salt Palace Convention Center</h6>
-              <h6>June 23-24, 2017</h6>
-              <a href="http://tranont.com/events.html#international" class="btn btn-default btn-page">Learn More</a>
+              <h2>October 2017 Event</h2>
+              <h6>More Information</h6>
+              <h6>Coming Soon</h6>
+              <!--<a href="http://tranont.com/events.html#international" class="btn btn-default btn-page">Learn More</a>-->
               <hr class="event-hr-bottom">
             </div>
-              <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/June2017EventHighlightVideo.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
-              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=g2TEg2-u6PQ" target="_blank" type="button" class="btn btn-default"><h5>JAN 2017 EVENT<br/>HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
+              <img id="imageEventMovie" src="https://s3-us-west-2.amazonaws.com/cont.training/Images/2017_JuneIntnlEvent.jpg" alt="June 2017 Event Highlights Video Screenshot"/>
+              <a id="buttonEventMovie" href="https://www.youtube.com/watch?v=yhI5B59OfXk" target="_blank" type="button" class="btn btn-default"><h5>JUN 2017 EVENT<br/>HIGHLIGHTS <i class="fa fa-caret-square-o-right fa-lg" aria-hidden="true"></i></h5></a>
           </div>
         </div>
       </div>
