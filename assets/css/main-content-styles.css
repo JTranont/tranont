@@ -340,6 +340,8 @@ a:focus {
   position: absolute;
   left: 0;
   text-align: center;
+  margin: 20px;
+  padding: 10px;
 }
 .top-section-text h6 {
   font-size: 20px;
@@ -474,7 +476,9 @@ a:focus {
     font-size: 16px;
   }
   .top-section-text {
-    top: 161px;
+    top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   #buttonEventMovie {
     top: -108px;
@@ -687,6 +691,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   .top-section-text h2 {
     line-height: 0px;
@@ -805,6 +811,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   #buttonEventMovie {
     top: -59px;
@@ -931,7 +939,9 @@ a:focus {
     font-size: 12px;
   }
   .top-section-text {
-    top: 136px;
+    top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   .top-section-text h2 {
     font-size: 16px;
@@ -1056,6 +1066,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   .top-section-text h2 {
     display: none;
@@ -1163,6 +1175,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   .top-section-text img {
     width: 150px;
@@ -1246,6 +1260,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   #buttonEventMovie {
     top: -154px;
@@ -1297,6 +1313,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   .top-section-text h2 {
     font-size: 15px;
@@ -1433,6 +1451,8 @@ a:focus {
   }
   .top-section-text {
     top: 0px;
+    margin: 20px;
+    padding: 10px;
   }
   .top-section-text img {
     width: 120px;
