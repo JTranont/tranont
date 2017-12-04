@@ -330,7 +330,7 @@ a:focus {
 }
 .top-row {
   display: block;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 .top-row-video {
   display: block;
