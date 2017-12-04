@@ -330,26 +330,29 @@ a:focus {
 }
 .top-row {
   display: block;
-  margin-top: 0px;
+  margin-top: 50px;
 }
 .top-row-video {
-  display: block;
+  display: none;
+  margin-top: 10px;
 }
 .top-section-text {
   position: absolute;
+  top: 198px;
   left: 0;
   text-align: center;
-  margin: 20px;
-  padding: 10px;
 }
 .top-section-text h6 {
   font-size: 20px;
+  line-height: 25px;
   font-weight: 200;
   color: #ffffff;
 }
 .top-section-text h2 {
   color: #ffffff;
+  line-height: 32px;
   font-size: 24px;
+  margin-top: 45px;
 }
 .top-section-text img {
   width: 340px;
@@ -367,9 +370,11 @@ a:focus {
   color: #ffffff;
 }
 .top-section-video {
+  padding: 0;
   z-index: -1;
 }
 .top-section-video-play {
+  padding: 0;
 }
 .top-video {
   width: 80%;
@@ -471,8 +476,7 @@ a:focus {
     font-size: 16px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 161px;
   }
   #buttonEventMovie {
     top: -108px;
@@ -684,16 +688,16 @@ a:focus {
     margin: 30px 0 30px 0;
   }
   .top-section-text {
-    top: 0px;
-    margin: 20px;
-    padding: 10px;
+    top: 155px;
   }
   .top-section-text h2 {
+    line-height: 30px;
     font-size: 21px;
     margin: 15px 0 0 0;
   }
   .top-section-text h6 {
     font-size: 18px;
+    line-height: 15px;
   }
   .top-section-text img {
     width: 235px;
@@ -802,8 +806,7 @@ a:focus {
     line-height: 15px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 125px;
   }
   #buttonEventMovie {
     top: -59px;
@@ -930,14 +933,16 @@ a:focus {
     font-size: 12px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 136px;
   }
   .top-section-text h2 {
     font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 0;
   }
   .top-section-text h6 {
     font-size: 12px;
+    line-height: 8px;
   }
   .top-section-text img {
     width: 150px;
@@ -1052,8 +1057,7 @@ a:focus {
     margin-top: 10px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 152px;
   }
   .top-section-text h2 {
     display: none;
@@ -1160,8 +1164,7 @@ a:focus {
     margin-top: 5px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 145px;
   }
   .top-section-text img {
     width: 150px;
@@ -1244,8 +1247,7 @@ a:focus {
     font-size: 8px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 184px;
   }
   #buttonEventMovie {
     top: -154px;
@@ -1296,11 +1298,11 @@ a:focus {
     letter-spacing: 3px;
   }
   .top-section-text {
-    margin: 20px;
-    padding: 10px;
+    top: 136px;
   }
   .top-section-text h2 {
     font-size: 15px;
+    line-height: 21px;
   }
   #buttonEventMovie {
     top: -148px;
@@ -1378,6 +1380,7 @@ a:focus {
   }
   .top-section-text h2 {
     font-size: 15px;
+    line-height: 21px;
   }
   .top-section-text img {
     width: 130px;
@@ -1430,8 +1433,12 @@ a:focus {
     position: relative;
     top: -1px;
   }
+  .top-section-text {
+    top: 154px;
+  }
   .top-section-text img {
     width: 120px;
+    margin-bottom: 12px;
   }
   #buttonEventMovie {
     top: -133px;
