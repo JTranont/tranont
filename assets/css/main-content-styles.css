@@ -333,8 +333,7 @@ a:focus {
   margin-top: 50px;
 }
 .top-row-video {
-  display: none;
-  margin-top: 5px;
+  display: block;
 }
 .top-section-text {
   position: absolute;
