@@ -223,6 +223,15 @@ body {
 .glyphicon-usd:hover {
   color: #ffffff;
 }
+.glyphicon-wrench {
+  font-size: 48px;
+  font-weight: bold;
+  color: #05538a;
+  padding: 1px 0 0 3px;
+}
+.glyphicon-wrench:hover {
+  color: #ffffff;
+}
 .hr-top {
   border-color: #888888;
   margin-top: 5%;
